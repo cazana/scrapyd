@@ -38,6 +38,9 @@ class Launcher(Service):
         project = msg['_project']
         args = [sys.executable, '-m', self.runner, 'crawl']
         args += get_crawl_args(msg)
+
+        log.msg(args)
+
         e = self.app.getComponent(IEnvironment)
         env = e.get_environment(msg, slot)
         args += ['--logfile={}'.format(env['LOG_FILE'])]
@@ -90,6 +93,7 @@ class ScrapyProcessProtocol(protocol.ProcessProtocol):
     def connectionMade(self):
         self.pid = self.transport.pid
         self.log("Process started: ")
+        log.msg('this works')
 
     def processEnded(self, status):
         if isinstance(status.value, error.ProcessDone):
