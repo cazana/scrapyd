@@ -1,4 +1,5 @@
-boto3==1.34.26
+awswrangler==3.5.1
+boto3==1.34.23
 datadog==0.48.0
 demjson3==3.0.6
 fontTools==4.47.2
@@ -6,5 +7,13 @@ mysqlclient==2.2.1
 psycopg2-binary==2.9.9
 itemloaders==1.1.0
 git+https://github.com/cazana/scrapyd.git
-Scrapy==2.11.0
+Scrapy==2.11.1
 scrapy-proxies==0.4
+cryptography==42.0.4
+deepdiff==6.7.1
+git+https://github.com/sanzenwin/scrapy-playwright.git@supporting_for_windows
+openpyxl==3.1.2
+beautifulsoup4==4.12.3
+hrequests==0.8.2
+paramiko==3.4.0
+yarl==1.9.4
