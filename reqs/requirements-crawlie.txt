@@ -17,3 +17,4 @@ beautifulsoup4==4.12.3
 hrequests==0.8.2
 paramiko==3.4.0
 yarl==1.9.4
+pandas==2.2.2
